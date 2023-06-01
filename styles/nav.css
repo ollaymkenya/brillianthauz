@@ -1,0 +1,163 @@
+/* Navbar */
+nav {
+  position: fixed;
+  width: 100%;
+  inset: 0;
+  bottom: 0;
+  padding: 12px 0;
+  background-color: #fff;
+  height: fit-content;
+  z-index: 2;
+}
+
+.nav-container {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  inset: 0;
+  bottom: auto;
+  background-color: #fff;
+  transition: height 0.25s ease-in;
+}
+
+.nav-container__links {
+  padding-top: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-container__images {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+  }
+
+  .the-secret,
+  .what-makes-me-speak,
+  .plan-of-attack {
+    position: absolute;
+    inset: 0;
+    top: auto;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: transform .5s ease-in;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    opacity: 0;
+  }
+
+  .the-secret.active,
+  .what-makes-me-speak.active,
+  .plan-of-attack.active {
+    transform: scaleY(1);
+    z-index: 0;
+    opacity: 1;
+  }
+
+  .the-secret {
+    background-image: url('/assets/investigation.jpg');
+  }
+
+  .what-makes-me-speak {
+    background-image: url('/assets/ideation.jpg');
+  }
+
+  .plan-of-attack {
+    background-image: url('/assets/presentation.jpg');
+  }
+}
+nav.active .nav-container {
+  height: 100vh;
+}
+
+.nav-end {
+  z-index: 2;
+}
+
+.main-links li {
+  font-size: 64px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.sub-links li {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.logo-normal {
+  width: 160px;
+}
+
+nav .logo-normal {
+  z-index: 2;
+}
+
+nav ul li {
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  padding-top: 64px;
+}
+
+footer::before {
+  position: absolute;
+  inset: 0;
+  content: '';
+  z-index: -3;
+  background-color: var(--grey1);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .footer-end {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-highlight {
+  max-width: 490px;
+}
+
+.social-icons {
+  width: fit-content;
+}
+
+.social-icons a {
+  width: 24px;
+  height: 24px;
+}
+
+.social-icons a:hover {
+  filter: invert(24%) sepia(88%) saturate(2204%) hue-rotate(341deg)
+    brightness(83%) contrast(102%);
+}
+
+.footer-bottom {
+  padding: 32px 0 1px;
+}

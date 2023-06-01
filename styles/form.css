@@ -1,0 +1,21 @@
+input,
+select {
+  display: block;
+  width: 100%;
+}
+
+.input-group {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.input-group__flex {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.input-group__flex label {
+  margin-top: 7px;
+}

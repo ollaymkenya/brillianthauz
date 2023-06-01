@@ -1,0 +1,61 @@
+.header {
+  position: relative;
+  overflow: hidden;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header h2 {
+  color: white;
+  mix-blend-mode: lighten;
+}
+
+.header video {
+  position: absolute;
+  inset: 0;
+  min-width: 100%;
+  z-index: -3;
+}
+
+.image-background__horizontal {
+  width: 100%;
+  min-height: min(50vh, 400px);
+}
+
+.investigation,
+.ideation,
+.presentation {
+  position: relative;
+  border-color: transparent;
+  overflow: hidden;
+}
+
+.investigation::after,
+.ideation::after,
+.presentation::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.25s ease-in;
+}
+
+.investigation::after {
+  background-image: url('/assets/investigation.jpg');
+}
+
+.ideation::after {
+  background-image: url('/assets/ideation.jpg');
+}
+
+.presentation::after {
+  background-image: url('/assets/presentation.jpg');
+}
+
+.investigation.active::after,
+.ideation.active::after,
+.presentation.active::after {
+  transform: scale(1.1);
+}

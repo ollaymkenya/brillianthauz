@@ -1,0 +1,55 @@
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 64px 0;
+  transition: background-color 0.25s ease-in;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header h1,
+.header p {
+  color: white;
+  mix-blend-mode: lighten;
+}
+
+.header video {
+  position: absolute;
+  inset: 0;
+  min-width: 100%;
+  z-index: -3;
+}
+
+.iframe {
+  transition: width 0.25s ease-in;
+  width: 80%;
+  min-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1020px) {
+  .left-section {
+    width: 70%;
+  }
+
+  .why-us {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: rgb(239, 239, 239);
+    background-color: linear-gradient(
+      90deg,
+      rgba(239, 239, 239, 1) 0%,
+      rgba(211, 211, 211, 1) 100%
+    );
+    background-image: url('/assets/jeremy.jpg');
+    background-repeat: no-repeat;
+    background-position: 89% 0;
+    background-size: cover;
+  }
+}

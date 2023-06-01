@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/theme.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+    <title>Careers | Brilliant Hauz</title>
+  </head>
+  <body>
+    <nav class="row d-flex j-c-space-between a-i-center">
+      <a class="logo-normal" href="/index.html">
+        <img src="/assets/logo.svg" alt="logo" />
+      </a>
+      <div class="nav-end d-flex j-c-space-between a-i-center s-gap">
+        <a href="/get-started.html" class="button">Get Started</a>
+        <span class="hamburger-icon"></span>
+      </div>
+      <div class="nav-container row">
+        <div class="main-links">
+          <ul>
+            <li><a href="/sales.html">Who we are</a></li>
+            <li><a href="/careers.html">Careers</a></li>
+          </ul>
+        </div>
+        <div class="sub-links">
+          <ul>
+            <li><a href="/sales.html">Ideation</a></li>
+            <li><a href="/sales.html">Consulting</a></li>
+            <li><a href="/sales.html">Data Analysis</a></li>
+          </ul>
+          <div class="social-icons d-flex j-c-space-between a-i-center s-gap">
+            <a><img src="/assets/icons/logo-instagram.svg" alt="" /></a>
+            <a><img src="/assets/icons/logo-facebook.svg" alt="" /></a>
+            <a><img src="/assets/icons/logo-twitter.svg" alt="" /></a>
+            <a><img src="/assets/icons/logo-linkedin.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="constrained-width">
+        <h6>Your free 45 minute call discovery</h6>
+        <!-- ------------------------------------------------------------------------ Personal Details ------------------------------------------------------ -->
+        <div class="input-group">
+          <label for="firstName">
+            What's your first name? <span class="mandatory">*</span>
+          </label>
+          <input type="text" id="firstName" name="firstName" />
+        </div>
+        <div class="input-group">
+          <label for="lastName">
+            What's your last name? <span class="mandatory">*</span>
+          </label>
+          <input type="text" id="lastName" name="lastName" />
+        </div>
+        <div class="input-group">
+          <label for="email">
+            What's your first email address? <span class="mandatory">*</span>
+          </label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="input-group">
+          <label for="phoneNumber">
+            What's your first phone number? <span class="mandatory">*</span>
+          </label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="Please add Country Code eg. +1 US, +61 AU, +44 UK"
+          />
+        </div>
+        <div class="input-group">
+          <label for="websiteUrl">
+            What's your websiet URL? <span class="mandatory">*</span>
+          </label>
+          <input type="url" id="websiteUrl" name="websiteUrl" />
+        </div>
+        <div class="input-group">
+          <label for="companyName">
+            What's your company name? <span class="mandatory">*</span>
+          </label>
+          <input type="text" id="companyName" name="companyName" />
+        </div>
+        <!-- ------------------------------------------------------------------------ Business Location ------------------------------------------------------ -->
+        <h6>Where are you located?</h6>
+        <div class="input-group__flex ">
+          <input type="radio" id="country" name="US" value="US" />
+          <label for="US">United States</label>
+        </div>
+        <div class="input-group__flex ">
+          <input type="radio" id="country" name="AU" value="AU" />
+          <label for="US">Australia</label>
+        </div>
+        <div class="input-group__flex ">
+          <input type="radio" id="country" name="CA" value="CA" />
+          <label for="US">Canada</label>
+        </div>
+        <div class="input-group__flex ">
+          <input type="radio" id="country" name="UK" value="UK" />
+          <label for="US">United Kingdom</label>
+        </div>
+        <div class="input-group__flex ">
+          <input type="radio" id="country" name="NZ" value="NZ" />
+          <label for="US">New Zealand</label>
+        </div>
+        <div class="input-group__flex ">
+          <input type="radio" id="country" name="EU" value="EU" />
+          <label for="US">Europe</label>
+        </div>
+        <div class="input-group__flex ">
+          <input type="radio" id="country" name="KE" value="KE" />
+          <label for="US">Kenya</label>
+        </div>
+        <label for="other">Your country is not listed, write it below?</label>
+        <input type="text" id="other" name="other" />
+        <!-- ------------------------------------------------------------------------About Business ------------------------------------------------------ -->
+        <h6>Where are you located?</h6>
+        <div class="input-group">
+          <label for="businessAge"
+            >How long has your business been operating?<span class="mandatory"
+              >*</span
+            >
+          </label>
+          <input type="text" id="businessAge" name="businessAge" />
+        </div>
+        <div class="input-group">
+          <label for="businessModel"
+            >Which best describes your business model?
+            <span class="mandatory">*</span></label
+          >
+          <select name="businessModel" id="businessModel">
+            <option value="onlineOffline"
+              >Physical Product Business (Online & Offline)</option
+            >
+            <option value="online"
+              >Physical Product Business (Online only)</option
+            >
+            <option value="dropshipping">Dropshipping</option>
+            <option value="digitalProductBusiness"
+              >Digital Products Business</option
+            >
+            <option value="serviceBasedBusiness">Service Based Business</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="revenue"
+            >What's your companies revenue last year?<span class="mandatory"
+              >*</span
+            >
+          </label>
+          <input
+            type="text"
+            id="revenue"
+            name="revenue"
+            placeholder="numbers only please, e.g., 5,000,000"
+          />
+        </div>
+        <!-- ------------------------------------------------------------------------ Goals ------------------------------------------------------ -->
+        <h6>Your goals</h6>
+        <div class="input-group">
+          <label for="target"
+            >What's your target monthly revenue in 6 months ?<span
+              class="mandatory"
+              >*</span
+            >
+          </label>
+          <input
+            type="text"
+            id="target"
+            name="target"
+            placeholder="numbers only please, e.g., 1,750,000"
+          />
+        </div>
+        <h6>About your marketing</h6>
+        <label for="marketing"
+          >What channels are you marketing in?
+          <span class="mandatory">*</span></label
+        >
+        <div class="input-group__flex">
+          <input type="checkbox" name="marketing" id="meta" />
+          <label for="meta">Facebook and/or Instagram</label>
+        </div>
+        <div class="input-group__flex">
+          <input type="checkbox" name="marketing" id="google" />
+          <label for="google">Google</label>
+        </div>
+        <div class="input-group__flex">
+          <input type="checkbox" name="marketing" id="youtube" />
+          <label for="youtube">YouTube</label>
+        </div>
+        <div class="input-group__flex">
+          <input type="checkbox" name="marketing" id="emailandsms" />
+          <label for="emailandsms">Email and/or SMS</label>
+        </div>
+        <div class="input-group__flex">
+          <input type="checkbox" name="marketing" id="none" />
+          <label for="none">None</label>
+        </div>
+        <div class="input-group__flex">
+          <input type="checkbox" name="marketing" id="otherChannel" />
+          <label for="otherChannel">Other</label>
+        </div>
+        <input type="text" id="otherChannelText" name="otherChannelText" />
+        <div class="input-group">
+          <label for="marketingSpending"
+            >How much do you currently spend on digital marketing per month
+            across all channels? (Facebook, Google, Display, email marketing
+            etc) <span class="mandatory">*</span></label
+          >
+          <select name="marketingSpending" id="marketingSpending">
+            <option value="none">Please choose ...</option>
+            <option value="<1000">Less than $1,000</option>
+            <option value="1000>">$1,001 - $2,500</option>
+            <option value="2500>">$2,501 - $5,000</option>
+            <option value="5000>">$5,001 - $10,000</option>
+            <option value="10000>">$10,001 - $25,000</option>
+            <option value="25000>">$25,001 - $50,000</option>
+            <option value="50000>">$50,001 - $100,000</option>
+            <option value="100000>">$100,000+</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="marketingSpending"
+            >And finally, how are you looking to scale your marketing?
+            <span class="mandatory">*</span></label
+          >
+          <select name="marketingSpending" id="marketingSpending">
+            <option value="none">Please choose ...</option>
+            <option value="agency">With an agency</option>
+            <option value="inhouse">In house</option>
+            <option value="both>">Combination of both</option>
+          </select>
+        </div>
+        <button id="submit" type="submit">Book my call</button>
+      </div>
+    </div>
+    <footer class="row b-gap">
+      <div class="footer-container">
+        <div class="footer-beginning grid s-gap">
+          <a href="/index.html" class="logo-normal">
+            <img src="/assets/logo.svg" alt="logo" />
+          </a>
+          <span class="footer-highlight fs-xx-large fw-bolder">
+            Discover a haven for ingineous, immediately executable business
+            ideas.
+          </span>
+          <a href="/get-started.html" class="button">Get Started</a>
+        </div>
+        <div class="footer-end b-gap">
+          <div class="">
+            <span class="title3">Services</span>
+            <ul class="grid ">
+              <li><a href="">Ideation</a></li>
+              <li><a href="">Consulting</a></li>
+              <li><a href="">Data Analysis</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <span class="title3">Hauz</span>
+            <ul class="grid ">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/sales.html">Who we are</a></li>
+              <li><a href="/careers.html">Careers</a></li>
+              <li><a href="/get-started.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="grid s-gap">
+            <span class="title3">SOCIALS</span>
+            <div class="social-icons d-flex j-c-space-between a-i-center s-gap">
+              <a><img src="/assets/icons/logo-instagram.svg" alt="" /></a>
+              <a><img src="/assets/icons/logo-facebook.svg" alt="" /></a>
+              <a><img src="/assets/icons/logo-twitter.svg" alt="" /></a>
+              <a><img src="/assets/icons/logo-linkedin.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span class="current-year"></span> BrilliantHauz</p>
+      </div>
+    </footer>
+    <script src="./scripts/scripts.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./scripts/get-started.js"></script>
+  </body>
+</html>
