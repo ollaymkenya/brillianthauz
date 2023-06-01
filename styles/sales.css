@@ -43,15 +43,15 @@
 }
 
 .investigation::after {
-  background-image: url('/assets/investigation.jpg');
+  background-image: url('./assets/investigation.jpg');
 }
 
 .ideation::after {
-  background-image: url('/assets/ideation.jpg');
+  background-image: url('./assets/ideation.jpg');
 }
 
 .presentation::after {
-  background-image: url('/assets/presentation.jpg');
+  background-image: url('./assets/presentation.jpg');
 }
 
 .investigation.active::after,

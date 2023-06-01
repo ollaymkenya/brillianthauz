@@ -828,7 +828,7 @@ ul.u-list li::before {
 }
 
 ul.u-list li::after {
-  content: url('/assets/check.svg');
+  content: url('./assets/check.svg');
   position: absolute;
   left: -28px;
   top: -1px;

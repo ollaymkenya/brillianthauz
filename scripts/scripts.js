@@ -43,7 +43,7 @@ currentYear.innerText = new Date().getFullYear();
 function setBackgroundImg() {
   requestAnimationFrame(() => {
     setTimeout(() => {
-      backgroundImage.style.backgroundImage = `url('/assets/${currentImgArray[currentImg]}')`
+      backgroundImage.style.backgroundImage = `url('./assets/${currentImgArray[currentImg]}')`
     }, 500);
   });
 }

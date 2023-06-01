@@ -64,15 +64,15 @@ nav {
   }
 
   .the-secret {
-    background-image: url('/assets/investigation.jpg');
+    background-image: url('./assets/investigation.jpg');
   }
 
   .what-makes-me-speak {
-    background-image: url('/assets/ideation.jpg');
+    background-image: url('./assets/ideation.jpg');
   }
 
   .plan-of-attack {
-    background-image: url('/assets/presentation.jpg');
+    background-image: url('./assets/presentation.jpg');
   }
 }
 nav.active .nav-container {
