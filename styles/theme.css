@@ -122,6 +122,7 @@ body {
     line-height: 50px;
     font-weight: 600;
     font-family: 'Koulen', sans-serif;
+    margin: 3.5rem 0;
   }
 
   h2 {
@@ -129,6 +130,7 @@ body {
     line-height: 49px;
     font-weight: 600;
     font-family: 'Koulen', sans-serif;
+    margin: 3.5rem 0;
   }
 
   h3 {
@@ -136,6 +138,7 @@ body {
     line-height: 45px;
     font-weight: 600;
     font-family: 'Koulen', sans-serif;
+    margin: 3.5rem 0;
   }
 
   h4 {
@@ -143,6 +146,7 @@ body {
     line-height: 42px;
     font-weight: 600;
     font-family: 'Koulen', sans-serif;
+    margin: 3.5rem 0;
   }
 
   h5 {
@@ -150,6 +154,7 @@ body {
     line-height: 39px;
     font-weight: 600;
     font-family: 'Koulen', sans-serif;
+    margin: 3.5rem 0;
   }
 
   h6 {
@@ -157,6 +162,7 @@ body {
     line-height: 37px;
     font-weight: 600;
     font-family: 'Koulen', sans-serif;
+    margin: 3.5rem 0;
   }
 
   .title1 {
@@ -197,12 +203,194 @@ body {
   }
 
   p {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 19px;
+    line-height: 38px;
   }
 
   li {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  /* for tablets (this is the smallest tablet)*/
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 89px;
+      line-height: 92px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 75px;
+      line-height: 81px;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 63px;
+      line-height: 71px;
+      font-weight: 600;
+    }
+
+    h4 {
+      font-size: 53px;
+      line-height: 62px;
+      font-weight: 600;
+    }
+
+    h5 {
+      font-size: 44px;
+      line-height: 53px;
+      font-weight: 600;
+    }
+
+    h6 {
+      font-size: 37px;
+      line-height: 46px;
+      font-weight: 600;
+    }
+
+    .title1 {
+      font-size: 32px;
+      line-height: 41px;
+      font-weight: 600;
+      display: block;
+    }
+
+    .title2 {
+      font-size: 27px;
+      line-height: 35px;
+      font-weight: 600;
+      display: block;
+    }
+
+    .title3 {
+      font-size: 23px;
+      line-height: 31px;
+      font-weight: 600;
+      display: block;
+    }
+
+    big {
+      font-size: 21px;
+      line-height: 26px;
+      font-weight: 500;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 39px;
+    }
+
+    small {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    .caption {
+      font-size: 12px;
+      line-height: 15px;
+      display: block;
+    }
+
+    .section-flex {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  /* for desktops (this is the smallest desktop)*/
+  @media only screen and (min-width: 1280px) {
+    h1 {
+      font-size: 96px;
+      line-height: 98px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 81px;
+      line-height: 86px;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 68px;
+      line-height: 75px;
+      font-weight: 600;
+    }
+
+    h4 {
+      font-size: 57px;
+      line-height: 65px;
+      font-weight: 600;
+    }
+
+    h5 {
+      font-size: 48px;
+      line-height: 57px;
+      font-weight: 600;
+    }
+
+    h6 {
+      font-size: 41px;
+      line-height: 50px;
+      font-weight: 600;
+    }
+
+    .title1 {
+      font-size: 35px;
+      line-height: 44px;
+      font-weight: 600;
+      display: block;
+    }
+
+    .title2 {
+      font-size: 29px;
+      line-height: 37px;
+      font-weight: 600;
+      display: block;
+    }
+
+    .title3 {
+      font-size: 25px;
+      line-height: 32px;
+      font-weight: 600;
+      display: block;
+    }
+
+    big {
+      font-size: 24px;
+      line-height: 40px;
+      font-weight: 500;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 40px;
+    }
+
+    small {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .caption {
+      font-size: 12px;
+      line-height: 20px;
+      display: block;
+    }
+
+    .section-flex {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   .larger {
@@ -318,246 +506,18 @@ body {
 }
 
 /* highlight */
-.circle-sketch__highlight {
-  position: relative;
-  left: 0.5em;
-}
-
-.circle-sketch__highlight:before {
-  content: '';
-  z-index: -1;
-  left: -0.5em;
-  top: -0.1em;
-  border-width: 2px;
-  border-style: solid;
-  border-color: var(--accent-color1);
-  position: absolute;
-  border-right-color: transparent;
-  width: 100%;
-  height: 1em;
-  transform: rotate(2deg);
-  opacity: 0.7;
-  border-radius: 50%;
-  padding: 0.1em 0.25em;
-}
-.circle-sketch__highlight:after {
-  content: '';
-  z-index: -1;
-  left: -0.5em;
-  top: 0.1em;
-  padding: 0.1em 0.25em;
-  border-width: 2px;
-  border-style: solid;
-  border-color: var(--accent-color1);
-  border-left-color: transparent;
-  border-top-color: transparent;
-  position: absolute;
-  width: 100%;
-  height: 1em;
-  transform: rotate(-1deg);
-  opacity: 0.7;
-  border-radius: 50%;
-}
-
 .realistic-marker__highlight {
-  position: relative;
+  display: inline;
+  background: rgb(216, 38, 44);
+  background: linear-gradient(
+    180deg,
+    rgba(216, 38, 44, 1) 0%,
+    rgba(216, 38, 44, 0.8) 30%,
+    rgba(216, 38, 44, 0.7) 50%,
+    rgba(216, 38, 44, 0.9) 100%
+  );
   color: #ffffff;
-  margin-left: 15px;
-}
-
-.realistic-marker__highlight::before {
-  content: '';
-  background-color: var(--accent-color1);
-  width: 100%;
-  height: 1.3em;
-  position: absolute;
-  z-index: -1;
-  filter: url(#markerShape);
-  left: -0.25em;
-  top: -0.05em;
-  padding: 0 0.3em;
-}
-
-/* for tablets (this is the smallest tablet)*/
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 89px;
-    line-height: 92px;
-    font-weight: 600;
-  }
-
-  h2 {
-    font-size: 75px;
-    line-height: 81px;
-    font-weight: 600;
-  }
-
-  h3 {
-    font-size: 63px;
-    line-height: 71px;
-    font-weight: 600;
-  }
-
-  h4 {
-    font-size: 53px;
-    line-height: 62px;
-    font-weight: 600;
-  }
-
-  h5 {
-    font-size: 44px;
-    line-height: 53px;
-    font-weight: 600;
-  }
-
-  h6 {
-    font-size: 37px;
-    line-height: 46px;
-    font-weight: 600;
-  }
-
-  .title1 {
-    font-size: 32px;
-    line-height: 41px;
-    font-weight: 600;
-    display: block;
-  }
-
-  .title2 {
-    font-size: 27px;
-    line-height: 35px;
-    font-weight: 600;
-    display: block;
-  }
-
-  .title3 {
-    font-size: 23px;
-    line-height: 31px;
-    font-weight: 600;
-    display: block;
-  }
-
-  big {
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: 500;
-  }
-
-  strong {
-    font-weight: 600;
-  }
-
-  p {
-    font-size: 19px;
-    line-height: 24px;
-  }
-
-  small {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .caption {
-    font-size: 12px;
-    line-height: 15px;
-    display: block;
-  }
-
-  .section-flex {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-/* for desktops (this is the smallest desktop)*/
-@media only screen and (min-width: 1280px) {
-  h1 {
-    font-size: 96px;
-    line-height: 98px;
-    font-weight: 600;
-  }
-
-  h2 {
-    font-size: 81px;
-    line-height: 86px;
-    font-weight: 600;
-  }
-
-  h3 {
-    font-size: 68px;
-    line-height: 75px;
-    font-weight: 600;
-  }
-
-  h4 {
-    font-size: 57px;
-    line-height: 65px;
-    font-weight: 600;
-  }
-
-  h5 {
-    font-size: 48px;
-    line-height: 57px;
-    font-weight: 600;
-  }
-
-  h6 {
-    font-size: 41px;
-    line-height: 50px;
-    font-weight: 600;
-  }
-
-  .title1 {
-    font-size: 35px;
-    line-height: 44px;
-    font-weight: 600;
-    display: block;
-  }
-
-  .title2 {
-    font-size: 29px;
-    line-height: 37px;
-    font-weight: 600;
-    display: block;
-  }
-
-  .title3 {
-    font-size: 25px;
-    line-height: 32px;
-    font-weight: 600;
-    display: block;
-  }
-
-  big {
-    font-size: 21px;
-    line-height: 27px;
-    font-weight: 500;
-  }
-
-  strong {
-    font-weight: 600;
-  }
-
-  p {
-    font-size: 20px;
-    line-height: 27px;
-  }
-
-  small {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
-  .caption {
-    font-size: 12px;
-    line-height: 20px;
-    display: block;
-  }
-
-  .section-flex {
-    display: flex;
-    flex-direction: row;
-  }
+  /* margin-left: 15px; */
 }
 
 /* ************************************************************************* Buttons & Anchor tags***************************************************************************************************************************/
@@ -700,9 +660,8 @@ textarea {
   padding: 0.6rem;
   background-color: var(--grey1);
   cursor: poHeebo;
-  font-size: 16px;
   width: 100%;
-  width: fit-content;
+  font: inherit;
 }
 
 input::placeholder {
@@ -809,18 +768,20 @@ ul {
 }
 
 ul.u-list {
+  gap: 32px;
   padding-left: 32px;
 }
 
 ul.u-list li {
   position: relative;
+  line-height: 2.4rem;
 }
 
 ul.u-list li::before {
   content: '';
   position: absolute;
   left: -30px;
-  top: 0;
+  top: 8px;
   width: 20px;
   height: 20px;
   background-color: var(--accent-color1-background);
@@ -831,7 +792,7 @@ ul.u-list li::after {
   content: url('../assets/check.svg');
   position: absolute;
   left: -28px;
-  top: -1px;
+  top: 2px;
 }
 
 .link-list__container {
@@ -855,11 +816,11 @@ ul.u-list li::after {
   justify-content: space-between;
 }
 
-.link-list__container-parent span {
+.dash-after {
   position: relative;
 }
 
-.link-list__container-parent span::after {
+.dash-after::after {
   position: absolute;
   top: 50%;
   left: 105%;
@@ -948,4 +909,35 @@ ul.link-list .link-list__img {
 /* ************************************************************************* Images ***************************************************************************************************************************/
 img {
   width: 100%;
+}
+
+/* ************************************************************************** Alerts ************************************************************************************************************************* */
+.alert {
+  position: fixed;
+  z-index: 3;
+  top: 20px;
+  left: 40%;
+  right: 40%;
+  border: 1px solid var(--grey2);
+  border-radius: 12px;
+  padding: .7rem;
+  text-align: center;
+  width: fit-content;
+  pointer-events: none;
+  background-color: var(--primary-color);
+  opacity: 0;
+}
+
+#alert-success {
+  color: var(--accent-color2);
+  border-color: var(--accent-color2);
+}
+
+#alert-error {
+  color: var(--accent-color1);
+  border-color: var(--accent-color1);
+}
+
+.alert.active {
+  opacity: 1;
 }

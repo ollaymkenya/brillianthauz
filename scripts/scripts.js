@@ -9,6 +9,7 @@ const backgroundImage = document.querySelector('.nav-container__images');
 currentImgArray = ['investigation.jpg', 'ideation.jpg', 'presentation.jpg'];
 currentImg = 0;
 
+// code for pills
 if (pills) {
   pills.forEach((pill) => {
     pill.addEventListener('click', () => {
@@ -18,6 +19,7 @@ if (pills) {
   });
 }
 
+// code for the form file input
 if (fileInput) {
   fileInput.addEventListener('change', () => {
     let contentToAdd = '';
@@ -31,23 +33,25 @@ if (fileInput) {
   });
 }
 
+// code for the hamburger icon
 hamburgerIcon.addEventListener('click', () => {
   hamburgerIcon.classList.toggle('active');
   nav.classList.toggle('active');
 });
 
-
 // setting current year
 currentYear.innerText = new Date().getFullYear();
 
+// code for setting the background image on the nav upon hover
 function setBackgroundImg() {
   requestAnimationFrame(() => {
     setTimeout(() => {
-      backgroundImage.style.backgroundImage = `url('./assets/${currentImgArray[currentImg]}')`
+      backgroundImage.style.backgroundImage = `url('./assets/${currentImgArray[currentImg]}')`;
     }, 500);
   });
 }
 
+// code for nav links and toggling
 navLinks.forEach((navLi) => {
   navLi.addEventListener('mouseover', (evt) => {
     if (currentImg !== parseInt(evt.target.dataset.index)) {
@@ -61,4 +65,25 @@ navLinks.forEach((navLi) => {
       setBackgroundImg();
     }
   });
+});
+
+navLinks.forEach((navLi) => {
+  navLi.addEventListener('click', () => {
+    hamburgerIcon.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+});
+
+// code for activating the nav to have a white background
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('nav', {
+  scrollTrigger: {
+    trigger: 'nav',
+    start: 'bottom top',
+    endTrigger: 'footer',
+    end: 'top 52px',
+    toggleActions: 'restart pause resume reset',
+    toggleClass: 'color',
+  },
 });

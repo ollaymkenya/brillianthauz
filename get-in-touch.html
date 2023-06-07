@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/theme.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
     <link rel="stylesheet" href="./styles/nav.css" />
-    <title>Careers | Brilliant Hauz</title>
+    <title>Brilliant Hauz</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('a4S5NTPAYvJOvz8Zn');
+      })();
+    </script>
   </head>
   <body>
     <nav class="row d-flex j-c-space-between a-i-center">
@@ -23,6 +33,7 @@
           <div class="main-links">
             <ul>
               <li><a href="./why-us.html">Who we are</a></li>
+              <li><a href="./get-in-touch.html">Get in touch</a></li>
               <li><a href="./careers.html">Careers</a></li>
             </ul>
           </div>
@@ -37,9 +48,7 @@
                 </a>
               </li>
               <li>
-                <a data-index="2" href="./why-us.html#section3"
-                  >Idea Bank</a
-                >
+                <a data-index="2" href="./why-us.html#section3">Idea Bank</a>
               </li>
             </ul>
             <div class="social-icons d-flex j-c-space-between a-i-center s-gap">
@@ -57,37 +66,60 @@
         </div>
       </div>
     </nav>
-    <div class="link-list__container row">
-      <div class="link-list__container-parent">
-        <span class="container-title">CAREERS</span>
+    <main>
+      <div class="alert" id="alert-success">
+        Conversation started successfully
       </div>
-      <ul class="link-list">
-        <li>
-          <span class="link-list__img"
-            ><img src="./assets/business-icons/market-researcher.svg" alt=""
-          /></span>
-          <span class="fw-600">Market Researcher</span>
-        </li>
-        <li>
-          <span class="link-list__img"
-            ><img src="./assets/business-icons/data-analyst.svg" alt=""
-          /></span>
-          <span class="fw-600">Data Analyst</span>
-        </li>
-        <li>
-          <span class="link-list__img"
-            ><img src="./assets/business-icons/idea-person.svg" alt=""
-          /></span>
-          <span class="fw-600">Resourceful Idea Person</span>
-        </li>
-        <li>
-          <span class="link-list__img"
-            ><img src="./assets/business-icons/book-reader.svg" alt=""
-          /></span>
-          <span class="fw-600">Book Reader / Analyst</span>
-        </li>
-      </ul>
-    </div>
+      <div class="alert" id="alert-error"></div>
+      <div class="row">
+        <div class="form intro">
+          <h1>Get in touch</h1>
+          <p>
+            I will answer any questions you may have and I ook forward to
+            hearing from you
+          </p>
+          <div class="input-group">
+            <label for="firstName">
+              What's your first name? <span class="mandatory">*</span>
+            </label>
+            <input type="text" id="firstName" name="firstName" />
+          </div>
+          <div class="input-group">
+            <label for="lastName">
+              What's your last name? <span class="mandatory">*</span>
+            </label>
+            <input type="text" id="lastName" name="lastName" />
+          </div>
+          <div class="input-group">
+            <label for="email">
+              What's your first email address? <span class="mandatory">*</span>
+            </label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="input-group">
+            <label for="telephone">
+              What's your first phone number? <span class="mandatory">*</span>
+            </label>
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="Please add Country Code eg. +1 US, +61 AU, +44 UK"
+            />
+          </div>
+          <div class="input-group">
+            <label for="message">Say hello</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="submit">Start the conversation</button>
+        </div>
+      </div>
+    </main>
     <footer class="row b-gap">
       <div class="footer-container">
         <div class="footer-beginning grid s-gap">
@@ -135,5 +167,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/get-in-touch.js"></script>
   </body>
 </html>

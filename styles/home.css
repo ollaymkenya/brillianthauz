@@ -9,14 +9,14 @@
 .header {
   position: relative;
   overflow: hidden;
-  padding-top: 32px;
+  padding-top: 80px;
   padding-bottom: 32px;
 }
 
 .header h1,
 .header p {
   color: white;
-  mix-blend-mode: lighten;
+  mix-blend-mode: exclusion;
 }
 
 .header video {
@@ -26,15 +26,18 @@
   z-index: -3;
 }
 
-.iframe {
-  transition: width 0.25s ease-in;
-  width: 80%;
-  min-width: 700px;
+iframe {
+  width: 90%;
   margin: 0 auto;
+  transition: width 0.25s ease-in;
 }
 
 @media screen and (min-width: 1020px) {
   .left-section {
+    width: 70%;
+  }
+
+  iframe {
     width: 70%;
   }
 
@@ -49,7 +52,7 @@
     );
     background-image: url('../assets/jeremy.jpg');
     background-repeat: no-repeat;
-    background-position: 89% 0;
+    background-position: 60% 0;
     background-size: cover;
   }
 }

@@ -24,24 +24,22 @@
         <div class="nav-container__links">
           <div class="main-links">
             <ul>
-              <li><a href="./sales.html">Who we are</a></li>
+              <li><a href="./why-us.html">Who we are</a></li>
               <li><a href="./careers.html">Careers</a></li>
             </ul>
           </div>
           <div class="sub-links">
             <ul>
               <li>
-                <a data-index="0" href="./sales.html#the-secret">The Secret</a>
+                <a data-index="0" href="./why-us.html#section1">The Secret</a>
               </li>
               <li>
-                <a data-index="1" href="./sales.html#what-makes-me-speak">
-                  What Makes me speak
+                <a data-index="1" href="./why-us.html#section2">
+                  Why Brilliant Hauz
                 </a>
               </li>
               <li>
-                <a data-index="2" href="./sales.html#plan-of-attack"
-                  >Our plan of attack</a
-                >
+                <a data-index="2" href="./why-us.html#section3">Idea Bank</a>
               </li>
             </ul>
             <div class="social-icons d-flex j-c-space-between a-i-center s-gap">
@@ -53,15 +51,22 @@
           </div>
         </div>
         <div class="nav-container__images">
-          <div class="the-secret active"></div>
-          <div class="what-makes-me-speak"></div>
-          <div class="plan-of-attack"></div>
+          <div class="section1 active"></div>
+          <div class="section2"></div>
+          <div class="section3"></div>
         </div>
       </div>
     </nav>
-    <div class="row">
+    <div class="form row">
       <div class="constrained-width">
-        <h6>Your free 45 minute call discovery</h6>
+        <h1>Your free 45 minute call discovery</h1>
+        <p>
+          This is your first step towards transforming your business into a
+          <strong>powerhouse brand!</strong> You'll have the opportunity to discuss your goals,
+          answer any pressing questions and assess ifBrilliant Hauz is the growth
+          partner you've been looking for!
+        </p>
+        <p><strong>Simply fill out the form below and get started.</strong></p>
         <!-- ------------------------------------------------------------------------ Personal Details ------------------------------------------------------ -->
         <div class="input-group">
           <label for="firstName">
@@ -94,7 +99,7 @@
         </div>
         <div class="input-group">
           <label for="websiteUrl">
-            What's your websiet URL? <span class="mandatory">*</span>
+            What's your website URL? <span class="mandatory">*</span>
           </label>
           <input type="url" id="websiteUrl" name="websiteUrl" />
         </div>
@@ -106,38 +111,40 @@
         </div>
         <!-- ------------------------------------------------------------------------ Business Location ------------------------------------------------------ -->
         <h6>Where are you located?</h6>
-        <div class="input-group__flex ">
-          <input type="radio" id="country" name="US" value="US" />
-          <label for="US">United States</label>
+        <div class="input-group__container">
+          <div class="input-group__flex">
+            <input type="radio" name="country" id="US" value="US" />
+            <label for="US">United States</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="radio" name="country" id="AU" value="AU" />
+            <label for="AU">Australia</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="radio" name="country" id="CA" value="CA" />
+            <label for="CA">Canada</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="radio" name="country" id="UK" value="UK" />
+            <label for="UK">United Kingdom</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="radio" name="country" id="NZ" value="NZ" />
+            <label for="NZ">New Zealand</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="radio" name="country" id="EU" value="EU" />
+            <label for="EU">Europe</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="radio" name="country" id="KE" value="KE" />
+            <label for="KE">Kenya</label>
+          </div>
+          <label for="other">Your country is not listed, write it below?</label>
+          <input type="text" id="other" name="other" />
         </div>
-        <div class="input-group__flex ">
-          <input type="radio" id="country" name="AU" value="AU" />
-          <label for="US">Australia</label>
-        </div>
-        <div class="input-group__flex ">
-          <input type="radio" id="country" name="CA" value="CA" />
-          <label for="US">Canada</label>
-        </div>
-        <div class="input-group__flex ">
-          <input type="radio" id="country" name="UK" value="UK" />
-          <label for="US">United Kingdom</label>
-        </div>
-        <div class="input-group__flex ">
-          <input type="radio" id="country" name="NZ" value="NZ" />
-          <label for="US">New Zealand</label>
-        </div>
-        <div class="input-group__flex ">
-          <input type="radio" id="country" name="EU" value="EU" />
-          <label for="US">Europe</label>
-        </div>
-        <div class="input-group__flex ">
-          <input type="radio" id="country" name="KE" value="KE" />
-          <label for="US">Kenya</label>
-        </div>
-        <label for="other">Your country is not listed, write it below?</label>
-        <input type="text" id="other" name="other" />
         <!-- ------------------------------------------------------------------------About Business ------------------------------------------------------ -->
-        <h6>Where are you located?</h6>
+        <h6>TELL US ABOUT YOUR BUSINESS...</h6>
         <div class="input-group">
           <label for="businessAge"
             >How long has your business been operating?<span class="mandatory"
@@ -199,31 +206,34 @@
           >What channels are you marketing in?
           <span class="mandatory">*</span></label
         >
-        <div class="input-group__flex">
-          <input type="checkbox" name="marketing" id="meta" />
-          <label for="meta">Facebook and/or Instagram</label>
+        <div class="input-group__container">
+          <div class="input-group__flex">
+            <input type="checkbox" name="marketing" id="meta" />
+            <label for="meta">Facebook and/or Instagram</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="checkbox" name="marketing" id="google" />
+            <label for="google">Google</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="checkbox" name="marketing" id="youtube" />
+            <label for="youtube">YouTube</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="checkbox" name="marketing" id="emailandsms" />
+            <label for="emailandsms">Email and/or SMS</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="checkbox" name="marketing" id="none" />
+            <label for="none">None</label>
+          </div>
+          <div class="input-group__flex">
+            <input type="checkbox" name="marketing" id="otherChannel" />
+            <label for="otherChannel">Other</label>
+          </div>
+          <label for="otherChannelText">Other marketing channel</label>
+          <input type="text" id="otherChannelText" name="otherChannelText" />
         </div>
-        <div class="input-group__flex">
-          <input type="checkbox" name="marketing" id="google" />
-          <label for="google">Google</label>
-        </div>
-        <div class="input-group__flex">
-          <input type="checkbox" name="marketing" id="youtube" />
-          <label for="youtube">YouTube</label>
-        </div>
-        <div class="input-group__flex">
-          <input type="checkbox" name="marketing" id="emailandsms" />
-          <label for="emailandsms">Email and/or SMS</label>
-        </div>
-        <div class="input-group__flex">
-          <input type="checkbox" name="marketing" id="none" />
-          <label for="none">None</label>
-        </div>
-        <div class="input-group__flex">
-          <input type="checkbox" name="marketing" id="otherChannel" />
-          <label for="otherChannel">Other</label>
-        </div>
-        <input type="text" id="otherChannelText" name="otherChannelText" />
         <div class="input-group">
           <label for="marketingSpending"
             >How much do you currently spend on digital marketing per month
@@ -264,15 +274,14 @@
             <img src="./assets/logo.svg" alt="logo" />
           </a>
           <span class="footer-highlight fs-xx-large fw-bolder">
-            Discover a haven for ingineous, immediately executable business
-            ideas.
+            Brilliant, immediately executable Breakthrough ideas for business.
           </span>
           <a href="./get-started.html" class="button">Get Started</a>
         </div>
         <div class="footer-end b-gap">
           <div class="">
             <span class="title3">Services</span>
-            <ul class="grid ">
+            <ul class="grid">
               <li><a href="">Ideation</a></li>
               <li><a href="">Consulting</a></li>
               <li><a href="">Data Analysis</a></li>
@@ -280,9 +289,9 @@
           </div>
           <div class="">
             <span class="title3">Hauz</span>
-            <ul class="grid ">
+            <ul class="grid">
               <li><a href="./index.html">Home</a></li>
-              <li><a href="./sales.html">Who we are</a></li>
+              <li><a href="./why-us.html">Who we are</a></li>
               <li><a href="./careers.html">Careers</a></li>
               <li><a href="./get-started.html">Contact Us</a></li>
             </ul>
@@ -302,8 +311,10 @@
         <p>&copy; <span class="current-year"></span> BrilliantHauz</p>
       </div>
     </footer>
-    <script src="./scripts/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./scripts/scripts.js"></script>
     <script src="./scripts./get-started.js"></script>
   </body>
 </html>

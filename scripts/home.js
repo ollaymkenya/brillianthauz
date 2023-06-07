@@ -9,5 +9,5 @@ gsap.to('iframe', {
     toggleActions: 'restart pause resume reset',
     toggleClass: 'active'
   },
-  width: '70%',
+  width: '75%'
 });
