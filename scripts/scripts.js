@@ -82,7 +82,7 @@ gsap.to('nav', {
     trigger: 'nav',
     start: 'bottom top',
     endTrigger: 'footer',
-    end: 'top 52px',
+    end: 'top top',
     toggleActions: 'restart pause resume reset',
     toggleClass: 'color',
   },

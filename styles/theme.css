@@ -87,8 +87,8 @@ span {
 /* ************************************************************************* Colors ***************************************************************************************************************************/
 :root {
   --primary-color: #ffffff; /* Used as the main background color */
-  --accent-color1: #d8262c; /* Used as the main accent color: (buttons, highlight, logo)*/
-  --accent-color1-background: #d8262c12; /* Used as the background accent color: (buttons, highlight, logo)*/
+  --accent-color1: #7ac74f; /* Used as the main accent color: (buttons, highlight, logo)*/
+  --accent-color1-background: #7ac74f12; /* Used as the background accent color: (buttons, highlight, logo)*/
   --accent-color2: #6ee268; /* Used as the secondary accent color: (lines, art)*/
   --font-color1: #111111; /* Used as the main fonts color */
   --font-color2: #0066cc; /* Used as the secondary fonts color */
