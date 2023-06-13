@@ -7,9 +7,17 @@
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/theme.css" />
     <link rel="stylesheet" href="./styles/nav.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/form.css" />
     <title>Careers | Brilliant Hauz</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('a4S5NTPAYvJOvz8Zn');
+      })();
+    </script>
   </head>
   <body>
     <nav class="row d-flex j-c-space-between a-i-center">
@@ -59,6 +67,10 @@
       </div>
     </nav>
     <div class="form row">
+      <div class="alert" id="alert-success">
+        We'll be in touch shortly
+      </div>
+      <div class="alert" id="alert-error"></div>
       <div class="constrained-width">
         <h1>Your free 45 minute call discovery</h1>
         <p>
@@ -162,6 +174,9 @@
             <span class="mandatory">*</span></label
           >
           <select name="businessModel" id="businessModel">
+            <option value="none"
+              >Please choose...</option
+            >
             <option value="onlineOffline"
               >Physical Product Business (Online & Offline)</option
             >
@@ -211,28 +226,24 @@
         </label>
         <div class="input-group__container">
           <div class="input-group__flex">
-            <input type="checkbox" name="marketing" id="meta" />
+            <input type="checkbox" name="marketing" id="meta" value="Facebook and/or Instagram"/>
             <label for="meta">Facebook and/or Instagram</label>
           </div>
           <div class="input-group__flex">
-            <input type="checkbox" name="marketing" id="google" />
+            <input type="checkbox" name="marketing" id="google" value="Google"/>
             <label for="google">Google</label>
           </div>
           <div class="input-group__flex">
-            <input type="checkbox" name="marketing" id="youtube" />
+            <input type="checkbox" name="marketing" id="youtube" value="YouTube"/>
             <label for="youtube">YouTube</label>
           </div>
           <div class="input-group__flex">
-            <input type="checkbox" name="marketing" id="emailandsms" />
+            <input type="checkbox" name="marketing" id="emailandsms" value="Email and/or SMS"/>
             <label for="emailandsms">Email and/or SMS</label>
           </div>
           <div class="input-group__flex">
-            <input type="checkbox" name="marketing" id="none" />
+            <input type="checkbox" name="marketing" id="none" value="None"/>
             <label for="none">None</label>
-          </div>
-          <div class="input-group__flex">
-            <input type="checkbox" name="marketing" id="otherChannel" />
-            <label for="otherChannel">Other</label>
           </div>
           <label for="otherChannelText">Other marketing channel</label>
           <input type="text" id="otherChannelText" name="otherChannelText" />
@@ -318,6 +329,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./scripts/scripts.js"></script>
-    <script src="./scripts./get-started.js"></script>
+    <script src="./scripts/get-started.js"></script>
   </body>
 </html>

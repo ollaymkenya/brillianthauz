@@ -82,8 +82,8 @@ gsap.to('nav', {
     trigger: 'nav',
     start: 'bottom top',
     endTrigger: 'footer',
-    end: 'top top',
+    end: 'bottom top',
     toggleActions: 'restart pause resume reset',
-    toggleClass: 'color',
+    toggleClass: 'color'
   },
 });

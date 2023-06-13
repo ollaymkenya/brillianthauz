@@ -89,7 +89,7 @@ nav.active .nav-container {
 }
 
 .main-links li {
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 800;
   text-transform: capitalize;
 }
@@ -159,8 +159,8 @@ footer::before {
 }
 
 .social-icons a:hover {
-  filter: invert(24%) sepia(88%) saturate(2204%) hue-rotate(341deg)
-    brightness(83%) contrast(102%);
+  filter: invert(76%) sepia(13%) saturate(1706%) hue-rotate(53deg)
+    brightness(90%) contrast(89%);
 }
 
 .footer-bottom {

@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background: url('../assets/careers.jpg');
+  color: var(--primary-color);
+  display: grid;
+  align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: #00000047;
+    z-index: 0;
+}
+
+.header .constrained-width {
+    z-index: 1;
+}

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -89,7 +93,7 @@ span {
   --primary-color: #ffffff; /* Used as the main background color */
   --accent-color1: #7ac74f; /* Used as the main accent color: (buttons, highlight, logo)*/
   --accent-color1-background: #7ac74f12; /* Used as the background accent color: (buttons, highlight, logo)*/
-  --accent-color2: #6ee268; /* Used as the secondary accent color: (lines, art)*/
+  --accent-color1-fade: #79c74f24; /* Used as the background of lis */
   --font-color1: #111111; /* Used as the main fonts color */
   --font-color2: #0066cc; /* Used as the secondary fonts color */
   --grey1: #f5f9ff; /* Used as background color of some elements like hamburger menu */
@@ -508,13 +512,13 @@ body {
 /* highlight */
 .realistic-marker__highlight {
   display: inline;
-  background: rgb(216, 38, 44);
+  background: #7ac74f;
   background: linear-gradient(
     180deg,
-    rgba(216, 38, 44, 1) 0%,
-    rgba(216, 38, 44, 0.8) 30%,
-    rgba(216, 38, 44, 0.7) 50%,
-    rgba(216, 38, 44, 0.9) 100%
+    #7ac74f 0%,
+    #7ac74fcc 30%,
+    #7ac74fb3 50%,
+    #7ac74fe6 100%
   );
   color: #ffffff;
   /* margin-left: 15px; */
@@ -784,7 +788,7 @@ ul.u-list li::before {
   top: 8px;
   width: 20px;
   height: 20px;
-  background-color: var(--accent-color1-background);
+  background-color: var(--accent-color1-fade);
   border-radius: 7rem;
 }
 
@@ -792,7 +796,7 @@ ul.u-list li::after {
   content: url('../assets/check.svg');
   position: absolute;
   left: -28px;
-  top: 2px;
+  top: 1px;
 }
 
 .link-list__container {
@@ -920,7 +924,7 @@ img {
   right: 40%;
   border: 1px solid var(--grey2);
   border-radius: 12px;
-  padding: .7rem;
+  padding: 0.7rem;
   text-align: center;
   width: fit-content;
   pointer-events: none;
@@ -929,15 +933,25 @@ img {
 }
 
 #alert-success {
-  color: var(--accent-color2);
-  border-color: var(--accent-color2);
+  color: green;
+  border-color: green;
 }
 
 #alert-error {
-  color: var(--accent-color1);
-  border-color: var(--accent-color1);
+  color: red;
+  border-color: red;
 }
 
 .alert.active {
   opacity: 1;
+}
+
+.mandatory {
+  color: red;
+}
+
+.fancy-background {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--accent-color1-fade);
 }
