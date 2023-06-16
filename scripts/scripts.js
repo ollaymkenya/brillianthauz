@@ -77,13 +77,10 @@ navLinks.forEach((navLi) => {
 // code for activating the nav to have a white background
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('nav', {
-  scrollTrigger: {
-    trigger: 'nav',
-    start: 'bottom top',
-    endTrigger: 'footer',
-    end: 'bottom top',
-    toggleActions: 'restart pause resume reset',
-    toggleClass: 'color'
-  },
-});
+window.addEventListener('scroll', () => {
+  if(window.scrollY >= 60) {
+    nav.style.background = '#ffffff';
+  }else {
+    nav.style.background = 'transparent';
+  }
+})
