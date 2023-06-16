@@ -955,3 +955,9 @@ img {
   padding-bottom: 24px;
   background-color: var(--accent-color1-fade);
 }
+
+.inpirational-background {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #ffce0816;
+}
